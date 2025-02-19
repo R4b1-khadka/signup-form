@@ -11,6 +11,7 @@
 }
 body {
   background-color: rgb(250, 247, 247);
+  padding-bottom: 100px;
 }
 
 .main-grid {
@@ -22,8 +23,40 @@ body {
 }
 .image {
   position: relative;
+  height: 100vh;
 }
-
+.odin-logo img {
+  height: 72px;
+}
+.odin-logo {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  left: 0;
+  height: 80px;
+  background-color: rgba(240, 231, 231, 0.644);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.odin-logo span {
+  font-family: forest-bold;
+  font-size: 4em;
+  color: white;
+}
+.image > span {
+  position: absolute;
+  bottom: 32px;
+  width: 100%;
+  left: 0px; /*if i remove this line then whole text disappears*/
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+}
+.photo-credit a {
+  color: white;
+}
 .sidebar-image {
   height: 100vh;
   width: 35vw;
