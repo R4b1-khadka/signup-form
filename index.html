@@ -33,37 +33,70 @@
           <p class="message bottom-message">You <em>know</em> you want to.</p>
         </div>
         <div class="main-form">
-          <p class="take-action">Let's do this!</p>
           <form accept="#" method="post">
-            <div class="name">
-              <label for="first-name">First-name</label>
-              <input type="text" id="first-name" name="first-name" />
-              <label for="last-name">Last-name</label>
-              <input type="text" id="last-name" name="last-name" />
+            <div class="only-form">
+              <p class="take-action">Let's do this!</p>
+              <div class="form-requirements">
+                <div class="left-section">
+                  <label for="first-name">First-name</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    placeholder="john"
+                    required
+                  />
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="user-email"
+                    placeholder="example@gmail.com"
+                  />
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                  />
+                </div>
+                <div class="right-section">
+                  <label for="last-name">Last-name</label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    placeholder="doe"
+                  />
+                  <label for="telephone">Phone</label>
+                  <input
+                    type="tel"
+                    id="telephone"
+                    name="user-phone-number"
+                    placeholder="9876543210"
+                    pattern="\d+"
+                  />
+                  <label for="confirm-password"> confirm password</label>
+                  <input
+                    type="password"
+                    id="confirm-password"
+                    name="confirm-password"
+                    required
+                  />
+                </div>
+              </div>
             </div>
-            <div class="credential">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="user-email" />
-              <label for="telephone">Phone</label>
-              <input type="tel" id="telephone" name="user-phone-number" />
-            </div>
-            <div class="password">
-              <label for="password">Password</label>
-              <input type="password" id="password" name="password" />
-              <label for="confirm-password"> confirm password</label>
-              <input
-                type="password"
-                id="confirm-password"
-                name="confirm-password"
-              />
+            <div class="button">
+              <button type="submit">Create Account</button>
             </div>
           </form>
         </div>
-        <div class="button">
-          <button type="submit">Create Account</button>
-        </div>
         <p class="bottom-text">
-          already have an account? <a href="#">Log in</a>
+          Already have an account?
+          <a href="https://www.linkedin.com/in/rabi-khadka-1803032b1/"
+            >Log in</a
+          >
         </p>
       </div>
     </main>
